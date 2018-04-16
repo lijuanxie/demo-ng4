@@ -1,0 +1,9 @@
+<app-hero-detail [herodetail]="selected"></app-hero-detail>
+<ul class="hero-list">
+    <li class="" *ngFor="let item of herolist" (click)="getInfo(item.id)">
+        <!-- <a routerlink="/detail/111"> -->
+        {{item.name}}
+        <!-- </a> -->
+
+    </li>
+</ul>
